@@ -1,0 +1,184 @@
+:root {
+    --heading-color-1: #4D2D10;
+    --heading-color-2: #F89954;
+    --primary-text: #562E08;
+    --button-bg: #F8964F;
+    --button-text: #ffffff;
+    --bg-color: #FFF8F2;
+    --decorative-element: #FFEDDC;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Archivo', sans-serif;
+    font-size: 62.5%;
+}
+body {
+    background-color: var(--bg-color);
+    color: var(--primary-text);
+    font-weight: 500;
+}
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   GENERAL                                  */
+/* -------------------------------------------------------------------------- */
+.btn-fill {
+    font-size: 1.8rem;
+    font-weight: 600;
+
+    background-color: var(--button-bg);
+    color: var(--button-text) !important;
+    padding: 1.4rem 3.2rem;
+    display: inline-block;
+    border-radius: 10rem;
+    -webkit-border-radius: 10rem;
+    -moz-border-radius: 10rem;
+    -ms-border-radius: 10rem;
+    -o-border-radius: 10rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 NAVIGATION                                 */
+/* -------------------------------------------------------------------------- */
+.nav-bar {
+    padding: 2.4rem 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--decorative-element);
+}
+
+/* ---------------------------------- LOGO ---------------------------------- */
+
+.logo {
+    font-size: 3rem;
+    color: var(--heading-color-1);
+    font-weight: 900;
+}
+.heading-contrast {
+    color: var(--heading-color-2);
+}
+
+/* -------------------------------- NAV MENU -------------------------------- */
+
+.nav-links {
+    list-style: none;
+    font-size: 1.8rem;
+    font-weight: 500;
+
+    display: flex;
+    gap: 3.2rem;
+    align-items: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--primary-text); 
+}
+
+
+/* --------------------------------- NAV CTA -------------------------------- */
+
+.cta-links {
+    list-style: none;
+    font-size: 1.8rem;
+    font-weight: 600;
+    
+    display: flex;
+    gap: 3.2rem;
+    align-items: center;
+}
+.cta-link {
+    text-decoration: none;
+    color: var(--primary-text);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                SECTION HERO                                */
+/* -------------------------------------------------------------------------- */
+
+.section-hero {
+    /* background-color: #4D2D10; */
+    padding: 3.2rem 0;
+}
+
+.hero-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* ------------------------------- HERO IMAGE ------------------------------- */
+
+/* .hero-img {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    border: 1px solid red;
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 72rem;
+    height: 72rem;
+    background-color: var(--decorative-element);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dish-img {
+    position: absolute;
+    z-index: 10;
+}
+.dish-img-shadow {
+    position: absolute;
+    z-index: 9;
+}
+
+.hero-shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.catlari-img {
+    position: absolute;
+    z-index: 2;
+    top: 327px;
+    left: 72px;
+} */
+
+/* -------------------------------- HERO TEXT ------------------------------- */
+
+.heading-primary {
+    font-size: 9.6rem;
+    line-height: 0.9;
+    margin-bottom: 4.2rem;
+}
+
+.hero-decription {
+    font-size: 1.8rem;
+    line-height: 1.7;
+    margin-bottom: 4.2rem;
+}
