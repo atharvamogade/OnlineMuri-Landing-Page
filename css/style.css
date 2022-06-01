@@ -36,13 +36,22 @@ body {
 
     background-color: var(--button-bg);
     color: var(--button-text) !important;
-    padding: 1.4rem 3.2rem;
+    /* padding: 1.4rem 3.2rem; */
     display: inline-block;
+    box-shadow: -7px 13px 30px hsla(25, 92%, 64%, 0.34);
     border-radius: 10rem;
     -webkit-border-radius: 10rem;
     -moz-border-radius: 10rem;
     -ms-border-radius: 10rem;
     -o-border-radius: 10rem;
+}
+
+.btn-nav {
+    padding: 1.4rem 3.2rem;
+}
+
+.btn-hero {
+    padding: 2.4rem 4.8rem;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -108,66 +117,54 @@ body {
 
 .section-hero {
     /* background-color: #4D2D10; */
-    padding: 3.2rem 0;
+    padding: 3.2rem 0 0 0;
 }
 
 .hero-row {
     display: flex;
-    justify-content: space-between;
+    justify-content:flex-start;
     align-items: center;
 }
 
 
 /* ------------------------------- HERO IMAGE ------------------------------- */
 
-/* .hero-img {
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    border: 1px solid red;
+.hero-img-box {
+    width: 100%;
+    /* position: relative;   */
 }
 
-.circle {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 72rem;
-    height: 72rem;
-    background-color: var(--decorative-element);
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    
+.watermark {
+    font-size: 1.8rem;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    gap: 1.6rem;
+    /* transform: rotate(-90deg); */
+
+    /* position: absolute;
+    bottom: 0;
+    left: 0; */
+}
+
+.watermark-1 {
+    display: flex;
+    gap: .8rem;
     align-items: center;
 }
 
-.dish-img {
-    position: absolute;
-    z-index: 10;
-}
-.dish-img-shadow {
-    position: absolute;
-    z-index: 9;
+.watermark-logo-text {
+    display: flex;
+    gap: .4rem;
 }
 
-.hero-shape {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
+.watermark-bold {
+    font-weight: 800;
 }
 
-.catlari-img {
-    position: absolute;
-    z-index: 2;
-    top: 327px;
-    left: 72px;
-} */
+.watermark-text {
+    display: inline;
+}
+
 
 /* -------------------------------- HERO TEXT ------------------------------- */
 
@@ -175,10 +172,30 @@ body {
     font-size: 9.6rem;
     line-height: 0.9;
     margin-bottom: 4.2rem;
+    font-weight: 900;
 }
+
+.hero-title {
+    position: relative;
+}
+
+.design-shape {
+    position: absolute;
+    top: -16px;
+    right: 52px;
+}
+
 
 .hero-decription {
     font-size: 1.8rem;
     line-height: 1.7;
     margin-bottom: 4.2rem;
+}
+
+
+/* ------------------------------ EXTRA SECTION ----------------------------- */
+.section-extra {
+    margin-top: -3px;
+    height: 100vh;
+    background-color: var(--heading-color-2);
 }
