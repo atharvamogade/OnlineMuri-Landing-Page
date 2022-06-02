@@ -21,6 +21,7 @@ body {
     background-color: var(--bg-color);
     color: var(--primary-text);
     font-weight: 500;
+    height: 100vh;
 }
 .container {
     max-width: 120rem;
@@ -118,20 +119,24 @@ body {
 .section-hero {
     /* background-color: #4D2D10; */
     padding: 3.2rem 0 0 0;
+    height: 100%;
 }
 
 .hero-row {
     display: flex;
     justify-content:flex-start;
     align-items: center;
+    height: 80%;
 }
 
 
 /* ------------------------------- HERO IMAGE ------------------------------- */
 
 .hero-img-box {
+    padding-left: 2.4rem;
     width: 100%;
-    /* position: relative;   */
+    height: 100%;
+    position: relative;  
 }
 
 .watermark {
@@ -139,11 +144,15 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
-    /* transform: rotate(-90deg); */
-
-    /* position: absolute;
+    width: 25%;
+    transform: rotate(-90deg) translate(37%, -100%);
+    position: absolute;
     bottom: 0;
-    left: 0; */
+    left: 0;
+    -webkit-transform: rotate(-90deg) translate(37%, -100%);
+    -moz-transform: rotate(-90deg) translate(37%, -100%);
+    -ms-transform: rotate(-90deg) translate(37%, -100%);
+    -o-transform: rotate(-90deg) translate(37%, -100%);
 }
 
 .watermark-1 {
@@ -162,7 +171,7 @@ body {
 }
 
 .watermark-text {
-    display: inline;
+    font-size: 1.8rem;
 }
 
 
@@ -182,9 +191,8 @@ body {
 .design-shape {
     position: absolute;
     top: -16px;
-    right: 52px;
+    right: 32px;
 }
-
 
 .hero-decription {
     font-size: 1.8rem;
@@ -192,10 +200,46 @@ body {
     margin-bottom: 4.2rem;
 }
 
+.hero-text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    position: relative;
+}
+
+.social-links-box {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    gap: 3.2rem;
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.soccial-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 2rem;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+    color: var(--primary-text);
+}
+
+
 
 /* ------------------------------ EXTRA SECTION ----------------------------- */
 .section-extra {
-    margin-top: -3px;
+    margin-top: -13.27rem;
     height: 100vh;
     background-color: var(--heading-color-2);
 }
