@@ -95,6 +95,10 @@ body {
     color: var(--primary-text); 
 }
 
+.nav-link--active {
+    position: relative;
+    color: var(--button-bg);
+}
 
 /* --------------------------------- NAV CTA -------------------------------- */
 
