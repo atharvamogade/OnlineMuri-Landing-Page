@@ -22,6 +22,7 @@ body {
     color: var(--primary-text);
     font-weight: 500;
     height: 100vh;
+    overflow: hidden;
 }
 a {
     text-decoration: none;
@@ -285,12 +286,22 @@ a {
     gap: 2rem;
 }
 
-.social-link {
+.social-link:link,
+.social-link:visited {
     display: flex;
     align-items: center;
-
     text-decoration: none;
     color: var(--primary-text);
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+}
+
+.social-link:hover,
+.social-link:active {
+    color: var(--button-bg);
 }
 
 
